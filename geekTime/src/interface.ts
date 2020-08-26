@@ -124,3 +124,9 @@ function getLib() {
   lib.doSomething = () => {}
   return lib
 }
+
+// 创建多个实例
+let lib1 = getLib();
+lib1();
+lib1.doSomething();
+let lib2 = getLib();
